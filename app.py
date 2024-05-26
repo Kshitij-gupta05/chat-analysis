@@ -13,6 +13,7 @@ page = requests.get(url)
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
+uploaded_file= soup
 if uploaded_file is not None:
     chat=soup.find('div')
     content=chat.text
