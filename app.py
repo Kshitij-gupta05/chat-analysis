@@ -4,14 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from bs4 import BeautifulSoup
 import requests
-from dotenv import load_dotenv
-import os
 
-load_dotenv('.env')
+
 
 st.sidebar.title("Chat Analyzer")
 
-url = os.getenv('PROJECTCHAT')
+url = st.secrets['PROJECT_CHAT']
 
 page = requests.get(url)
 
