@@ -2,6 +2,8 @@ import streamlit as st
 import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
+from bs4 import BeautifulSoup
+import requests
 
 st.sidebar.title("Chat Analyzer")
 

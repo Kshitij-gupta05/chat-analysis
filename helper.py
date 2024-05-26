@@ -3,8 +3,6 @@ from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 import emoji
-from bs4 import BeautifulSoup
-import requests
 
 extract = URLExtract()
 
