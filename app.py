@@ -4,10 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from bs4 import BeautifulSoup
 import requests
+from dotenv import load_dotenv
+import os
+
+load_dotenv('.env')
 
 st.sidebar.title("Chat Analyzer")
 
-url = 'https://chat-analyser-mpcse083.netlify.app/'
+url = os.getenv('PROJECTCHAT')
 
 page = requests.get(url)
 
